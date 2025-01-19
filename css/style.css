@@ -50,3 +50,63 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+
+.content__table {
+    margin: 50px 0 50px 0;
+    background-color: black;
+}
+
+.table {
+}
+
+.table__person {
+    padding: 20px 30px 40px;
+}
+
+.table__thead {
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid white;
+}
+
+.table__thead .table__td {
+    display: flex;
+    align-items: center;
+}
+
+.table__body {
+}
+
+.table__tr {
+    display: flex;
+    height: 30px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.table__tr:hover {
+    color: aqua;
+    transition: color 0.5s ease;
+}
+
+.table__tr:last-child {
+    border-bottom: 2px solid white;
+}
+
+.table__td {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.table__td:nth-child(1) {
+    width: 400px;
+}
+
+.table__td:nth-child(2) {
+    width: 200px;
+}
+
+.table__td:nth-child(3) {
+    width: 200px;
+}
