@@ -1,7 +1,68 @@
-* {
+/* ------- normalize ------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  *, *:focus, *:hover, *:visited, *:active {
+    outline: none;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
-}
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  img {
+    vertical-align: top;
+    max-width: 100%;
+    border-style: none;
+    transform: translate3d(0px, 0px, .001px);
+  }
+  
+  button, input, textarea {
+    font-family: inherit;
+    margin: 0;
+    box-shadow: none;
+  }
+  
+  button, input {
+    overflow: visible;
+  }
+  
+  button {
+    text-transform: none;
+    cursor: pointer;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /* ------- end normalize ------- */
 
 html {
     background-color: rgb(30, 30, 30);
@@ -109,4 +170,14 @@ html, body {
 
 .table__td:nth-child(3) {
     width: 200px;
+}
+
+.btn {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: aqua;
 }
