@@ -1,5 +1,6 @@
 <?php
 
+
 ?>
 
 
@@ -26,14 +27,13 @@
                 <div class="php"></div>
                 <div class="container">
                     <div class="content content__table">
-                        <div class="table table__person">
-                            <div class="table__thead">
+                        <div class="table table__person" id="table">
+                            <!-- <div class="table__thead">
                                 <div class="table__td">Name</div>
                                 <div class="table__td">Birthday</div>
                                 <div class="table__td">Job</div>
                             </div>
-                            <div class="table__body">
-
+                            <div class="table__body" id="table-body">
                                 <div class="table__tr">
                                     <div class="table__td">Jhon Smith</div>
                                     <div class="table__td">New York</div>
@@ -44,9 +44,7 @@
                                     <div class="table__td">New York</div>
                                     <div class="table__td">01.02.1996</div>
                                 </div>
-                            </div>
-
-
+                            </div> -->
                         </div>
                     </div>
                 </div>
