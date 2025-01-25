@@ -1,0 +1,21 @@
+html {
+    font-family: var(--font-family);
+    min-width: var(--html-min-width);
+    max-width: var(--html-max-width);
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+    line-height: 140%;
+    background-color: var(--bg-1);    
+    color: var(--color-1);
+} 
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 16px;
+    /* @include from-tablet {
+        padding: 0 25px 0 50px;
+    } */
+}

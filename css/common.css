@@ -1,0 +1,6 @@
+@import "setup/reset.css";
+@import "setup/custom-properties.css";
+@import "setup/font.css";
+@import "setup/common.css";
+
+@import "./style.css";

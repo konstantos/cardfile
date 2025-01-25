@@ -9,9 +9,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1">
+    <title>Cardfile</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/common.css">
 
 </head>
 

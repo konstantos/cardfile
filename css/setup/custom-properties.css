@@ -1,0 +1,16 @@
+:root {
+     /* ---------- Sizes ---------- */
+    --html-min-width: 360px;
+    --html-max-width: 1920px;
+    --container: 1200px;
+
+    /* ---------- Colors ---------- */ 
+    --color-1: #ffffff;
+
+    --bg-1: #1e1e1e;    
+
+    /* ---------- Typography ---------- */
+    --font-family: "Lato", sans-serif;
+
+    
+}
