@@ -1,7 +1,7 @@
 .body__wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 }
 
 .footer,.header {
@@ -35,12 +35,14 @@
 .content__table {
     margin: 50px 0 50px 0;
     background-color: black;
+    overflow-x: auto;
 }
 
 .table {
 }
 
 .table__person {
+    width: max-content;
     padding: 20px 30px 40px;
 }
 
@@ -77,19 +79,16 @@
 .table__td {
     display: flex;
     align-items: center;
+    width: 150px;
     padding: 5px 10px;
 }
 
 .table__td:nth-child(1) {
-    width: 400px;
+    width: 70px;
 }
 
 .table__td:nth-child(2) {
-    width: 200px;
-}
-
-.table__td:nth-child(3) {
-    width: 200px;
+    width: 300px;
 }
 
 .btn {
