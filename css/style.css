@@ -55,6 +55,7 @@
 .table__thead .table__td {
     display: flex;
     align-items: center;
+    font-style: oblique;
 }
 
 .table__body {

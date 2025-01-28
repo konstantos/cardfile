@@ -61,7 +61,19 @@
         </footer>
     </div>
 
+    <div class="intopModal__wrap">
+        <div class="thanks-modal">
+            <div class="thanks-modal__wrap">
+                <h3 class="title title__section thanks-modal__title">Заявка успешно отправлена!</h3>
+                <p class="thanks-modal__text">Спасибо за заявку, мы свяжемся с вами в близжайшее время</p>
+                <button class="btn btn-default btn__blue-white-blue thanks-modal-btn arcticmodal-close"
+                    type="button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.arcticmodal.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 

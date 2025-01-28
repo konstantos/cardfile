@@ -11,17 +11,34 @@ $str = '';
 $table_tr = "";
 $table_td = "";
 if ($_POST['action'] == 1) {
-    $sql = "SELECT  `name`, 
-                    `surename`, 
-                    `birthday`, 
-                    `id_birthplace`, 
-                    `id_residence`, 
-                    `id_gender`,
-                    `job`,
-                    `id_post`,
-                    `phone_number`,
-                    `id_religion`,
-                    `id_marital_status` FROM `users`";
+    $sql = "SELECT  users.name,
+                    users.surename,                    
+                    genders.name_gender AS gender,
+                    users.birthday,
+                    cityes_birthplace.name_cityes AS birthplace,
+                    marital_status.name_marital_status AS `marital status`,
+                    religions.name_religion AS religion,                    
+                    users.job,
+                    posts.name_post AS post,
+                    cityes_residence.name_cityes AS residence,
+                    users.`phone number`
+            FROM 
+                users
+            JOIN 
+                genders AS genders ON users.gender = genders.id
+            JOIN 
+                cityes AS cityes_birthplace  ON users.birthplace = cityes_birthplace.id            
+            JOIN 
+                marital_status AS marital_status  ON users.`marital status` = marital_status.id
+            JOIN 
+                religions AS religions  ON users.religion = religions.id
+            
+            JOIN 
+                posts AS posts  ON users.post = posts.id
+            JOIN 
+                cityes AS cityes_residence  ON users.residence = cityes_residence.id;
+                ";
+
     $sth = $dbh->prepare($sql);
     $sth->execute();
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -47,7 +64,7 @@ if ($_POST['action'] == 1) {
             }
         }
 
-        $table_tr = $table_tr . '<div class="table__tr">' . $table_td . '</div>';
+        $table_tr = $table_tr . '<div class="table__tr" data-modal="request">' . $table_td . '</div>';
 
     }
 
